@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#10253a" />
+    <meta name="description" content="力氣錘：蓄力揮下大木槌，讓指標直衝塔頂敲響金鐘！" />
+    <title>力氣錘</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="kicker">夜市大力王</p>
+        <h1>力氣錘</h1>
+        <p>揮下木槌，把指標送上塔頂！</p>
+      </header>
+
+      <section class="hud" aria-label="分數">
+        <div><span>本次</span><strong id="score">000</strong></div>
+        <div><span>本局最佳</span><strong id="session-best">000</strong></div>
+        <div><span>最高紀錄</span><strong id="best">000</strong></div>
+      </section>
+      <p id="status" class="status" role="status">按住「蓄力揮錘」準備</p>
+
+      <section class="fairground" aria-label="力氣錘測力台">
+        <div id="bell" class="bell" aria-hidden="true">
+          <span></span>
+          <b>響鈴</b>
+        </div>
+        <div class="tower" aria-label="力量高度">
+          <div class="label bell-label">響鈴</div>
+          <div class="label heavy-label">重</div>
+          <div class="label medium-label">中</div>
+          <div class="label light-label">輕</div>
+          <div class="rail"></div>
+          <div id="climber" class="climber"></div>
+        </div>
+        <div class="base">
+          <img src="./assets/art/elementWood028.png" alt="" />
+          <div id="pad" class="pad"></div>
+        </div>
+        <div id="mallet" class="mallet" aria-hidden="true">
+          <img class="head" src="./assets/art/elementWood014.png" alt="" />
+          <img class="handle" src="./assets/art/elementWood001.png" alt="" />
+        </div>
+        <div class="timing" aria-label="落槌節奏">
+          <span>落槌區</span><i id="timing-cursor"></i>
+        </div>
+      </section>
+
+      <div class="charge-readout"><span>蓄力</span><div><i id="charge-fill"></i></div></div>
+      <div class="controls">
+        <button id="swing-button" class="swing-button" type="button">按住蓄力揮錘</button>
+        <button id="reset-button" type="button">新局</button>
+        <button id="mute-button" type="button" aria-pressed="false">音效開</button>
+      </div>
+
+      <details>
+        <summary>怎麼玩</summary>
+        <p>按住按鈕蓄力，觀察落槌節奏游標；在右側金色落槌區放開。力量越強、節奏越準，指標爬得越高。越過「響鈴」線可敲鐘並獲得 250 分加成。</p>
+      </details>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
