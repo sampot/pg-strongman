@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rev": "22ff778",
+  "files": [
+    "app.js",
+    "assets/art/elementWood001.png",
+    "assets/art/elementWood014.png",
+    "assets/art/elementWood028.png",
+    "assets/art/genericItem_color_080.png",
+    "assets/art/genericItem_color_081.png",
+    "assets/art/License-physics.txt",
+    "assets/sfx/impactMetal_heavy_000.ogg",
+    "assets/sfx/impactPlate_heavy_000.ogg",
+    "assets/sfx/impactWood_heavy_000.ogg",
+    "audio.js",
+    "functions.js",
+    "game.js",
+    "index.html",
+    "styles.css"
+  ]
+}
